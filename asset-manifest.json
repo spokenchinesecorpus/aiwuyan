@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aiwuyan/static/css/main.febb29fe.css",
+    "main.js": "/aiwuyan/static/js/main.daec832a.js",
+    "index.html": "/aiwuyan/index.html",
+    "main.febb29fe.css.map": "/aiwuyan/static/css/main.febb29fe.css.map",
+    "main.daec832a.js.map": "/aiwuyan/static/js/main.daec832a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.febb29fe.css",
+    "static/js/main.daec832a.js"
+  ]
+}
