@@ -6,11 +6,11 @@ const Hero = () => {
     <section className="hero">
       <div className="container hero-inner">
         <div className="hero-copy">
-          <div className="eyebrow">AI × 中文教育研究</div>
+          <div className="eyebrow">AI × 国际中文教育</div>
           <h1>吾言</h1>
           <h2>国际中文教育智能体</h2>
           <p>
-            以真实语料与智能对话为基础，支持全球中文学习、教学评估与教育研究。
+            以真实语料与AI智能辅助为基础，支持中文学习、教学与研究。
           </p>
           <div className="cta-row">
             <a href="#features" className="primary-btn">了解功能</a>
