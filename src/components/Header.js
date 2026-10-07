@@ -16,8 +16,7 @@ const Header = () => {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-name">吾言</span>
-          <span className="brand-sub">AI 国际中文教育智能体</span>
+          吾言
         </Link>
 
         <button
