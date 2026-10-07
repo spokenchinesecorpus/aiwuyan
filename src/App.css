@@ -1,0 +1,14 @@
+.app-shell {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+main {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 72px 0;
+  }
+}
