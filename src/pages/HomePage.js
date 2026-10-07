@@ -104,12 +104,11 @@ const HomePage = () => {
       <section className="section corpus">
         <div className="container">
           <h2 className="section-title">语料库</h2>
-          <p className="section-desc">真实语料，支持中文学习与教育研究</p>
+          <p className="section-desc">真实语料，支持中文学习与教学研究</p>
 
           <div className="corpus-box">
             <div className="corpus-text">
-              <p>吾言语料库包含 100 万+ 中文语句、50 万+ 词汇覆盖，来自 20+ 个真实语言场景，为学习、教学和研究提供坚实基础。</p>
-              <p>语料从新闻、学术、口语和教学场景中抽取，支持词汇、句法、语义和语用层面的深度分析。</p>
+              <p>吾言国际中文教育智能体以大规模汉语语料库为支撑，该语料库包括h汉语教材语料库、汉语自然口语语料库、汉语书面语语料库和汉语中介语语料库四大类，为学习、教学和研究提供坚实基础。</p>
             </div>
             <Link to="/corpus" className="btn btn-primary">进入语料库</Link>
           </div>
@@ -123,7 +122,7 @@ const HomePage = () => {
 
           <div className="contact-box">
             <p>
-              无论你是中文教育工作者、学习者、研究者，还是有兴趣参与项目协作的人，都欢迎联系吾言。
+              无论你是中文教育工作者、学习者、研究者，还是有兴趣参与项目协作的人，都欢迎联系我们。
             </p>
             <Link to="/contact" className="btn btn-primary">联系项目团队</Link>
           </div>
