@@ -1,4 +1,5 @@
 {
+  "homepage": "https://spokenchinesecorpus.github.io/aiwuyan",
   "name": "aiwuyan-website",
   "version": "1.0.0",
   "private": true,
@@ -12,6 +13,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "react-scripts": "5.0.1"
