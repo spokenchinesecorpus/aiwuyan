@@ -29,57 +29,57 @@ const valuePoints = [
 
 const CorpusPage = () => {
   return (
-    <div className="corpus-page section">
-      <div className="container">
-        <div className="section-header">
-          <span className="badge">语料库</span>
-          <h2 className="section-title">以真实语料，为学习与研究提供支持</h2>
-          <p className="section-subtitle">
-            吾言语料库不只是文本集合，而是面向中文学习、教育实践和语言研究的一套真实语言资源体系。
-          </p>
+    <div className="corpus-page">
+      <section className="corpus-hero">
+        <div className="container">
+          <h1>语料库</h1>
+          <p>真实语料，支持中文学习与教育研究</p>
         </div>
+      </section>
 
-        <div className="stats-row">
-          <div className="stat-box card">
-            <strong>100万+</strong>
-            <span>中文语句</span>
-          </div>
-          <div className="stat-box card">
-            <strong>50万+</strong>
-            <span>词汇覆盖</span>
-          </div>
-          <div className="stat-box card">
-            <strong>20+</strong>
-            <span>语料来源</span>
-          </div>
-          <div className="stat-box card">
-            <strong>多维</strong>
-            <span>语言标注</span>
-          </div>
-        </div>
-
-        <div className="corpus-grid">
-          {corpusData.map((item, index) => (
-            <div key={index} className="corpus-card card">
-              <div className="corpus-icon">{index + 1}</div>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+      <section className="section">
+        <div className="container">
+          <div className="stats-grid">
+            <div className="stat-item">
+              <strong>100万+</strong>
+              <span>中文语句</span>
             </div>
-          ))}
-        </div>
+            <div className="stat-item">
+              <strong>50万+</strong>
+              <span>词汇覆盖</span>
+            </div>
+            <div className="stat-item">
+              <strong>20+</strong>
+              <span>语料来源</span>
+            </div>
+            <div className="stat-item">
+              <strong>多维</strong>
+              <span>语言标注</span>
+            </div>
+          </div>
 
-        <div className="value-panel card">
-          <h3>语料价值</h3>
-          <div className="value-list">
+          <h2 className="section-title" style={{ marginTop: '60px' }}>语料类型</h2>
+          <div className="corpus-grid">
+            {corpusData.map((item, index) => (
+              <div key={index} className="corpus-card">
+                <div className="corpus-number">{index + 1}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="section-title" style={{ marginTop: '60px' }}>语料价值</h2>
+          <div className="value-grid">
             {valuePoints.map((point, index) => (
               <div key={index} className="value-item">
-                <span>✓</span>
+                <span className="check">✓</span>
                 <p>{point}</p>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

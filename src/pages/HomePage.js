@@ -17,7 +17,7 @@ const HomePage = () => {
     {
       icon: '🧠',
       title: '核心理念',
-      text: '把语言学、教育学和人工智能结合在一起，让学习者不仅“学会说”，也能“学会说成自己的话”。'
+      text: '把语言学、教育学和人工智能结合在一起，让学习者不仅"学会说"，也能"学会说成自己的话"。'
     },
     {
       icon: '🚀',
@@ -51,10 +51,10 @@ const HomePage = () => {
           <div className="hero-copy">
             <p className="hero-badge">AI × 中文教育</p>
             <h1>吾言</h1>
-            <h2>让中文，从“他言”，走向“吾言”</h2>
+            <h2>让中文，从"他言"，走向"吾言"</h2>
             <p className="hero-text">
-              第一天，汉语是“他言”；<br />
-              每一天，汉语都更接近“吾言”；<br />
+              第一天，汉语是"他言"；<br />
+              每一天，汉语都更接近"吾言"；<br />
               AI 吾言，陪你把汉语说成自己的话。
             </p>
 
@@ -69,7 +69,7 @@ const HomePage = () => {
       <section className="section projects">
         <div className="container">
           <h2 className="section-title">项目介绍</h2>
-          <p className="section-desc">从“他言”到“吾言”的语言旅程</p>
+          <p className="section-desc">从"他言"到"吾言"的语言旅程</p>
 
           <div className="grid-4">
             {projectHighlights.map((item, index) => (

@@ -1,144 +1,131 @@
 .feature-page {
-  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  background: #f8f9ff;
 }
 
-.feature-tabs {
+.feature-hero {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.feature-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.feature-hero p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tab-buttons {
   display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 50px;
   flex-wrap: wrap;
-  gap: 12px;
-  margin: 14px 0 30px;
 }
 
 .tab-btn {
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  background: rgba(255, 255, 255, 0.9);
-  color: var(--slate-700);
-  border-radius: 999px;
-  padding: 12px 20px;
+  padding: 14px 32px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 8px;
   font-weight: 700;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  border-color: #f59e0b;
+  color: #f59e0b;
 }
 
 .tab-btn.active {
-  background: linear-gradient(120deg, var(--indigo-700) 0%, var(--violet-500) 100%);
-  color: var(--white);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
   border-color: transparent;
-  box-shadow: 0 12px 28px rgba(67, 56, 202, 0.2);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3);
 }
 
-.feature-panel-detail {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 24px;
-  padding: 30px;
-  border-radius: 28px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(255,255,255,0.9);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
+.feature-detail {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-.feature-panel-detail.indigo {
-  background: linear-gradient(135deg, rgba(238,242,255,0.95), rgba(239,246,255,0.8));
-}
-
-.feature-panel-detail.cyan {
-  background: linear-gradient(135deg, rgba(224,254,255,0.9), rgba(239,246,255,0.8));
-}
-
-.feature-panel-detail.amber {
-  background: linear-gradient(135deg, rgba(254,243,199,0.9), rgba(255,247,237,0.9));
-}
-
-.feature-panel-copy {
+.feature-header {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
 }
 
-.feature-panel-copy h3 {
-  font-size: clamp(2.1rem, 4vw, 3rem);
+.feature-emoji {
+  font-size: 4rem;
 }
 
-.feature-panel-copy p {
+.feature-header h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1a202c;
+  margin-bottom: 12px;
+}
+
+.feature-header p {
   font-size: 1.05rem;
-  color: var(--slate-600);
+  color: #666;
+  line-height: 1.6;
 }
 
-.detail-list {
+.feature-points {
   display: grid;
-  gap: 16px;
+  gap: 20px;
 }
 
-.detail-item {
+.feature-point {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  padding: 18px 18px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.62);
-  border: 1px solid rgba(148,163,184,0.18);
+  gap: 20px;
 }
 
-.detail-index {
+.point-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--indigo-700), var(--violet-500));
-  color: var(--white);
   font-weight: 800;
   flex-shrink: 0;
 }
 
-.detail-item p {
-  color: var(--slate-700);
-}
-
-.feature-bottom-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: 28px;
-}
-
-.feature-bottom-grid .card {
-  padding: 24px 22px;
-}
-
-.feature-bottom-grid h4 {
-  margin-bottom: 12px;
-  font-size: 1.2rem;
-}
-
-.feature-bottom-grid ul {
-  list-style: none;
-  display: grid;
-  gap: 12px;
-  color: var(--slate-600);
-}
-
-.feature-bottom-grid li {
-  position: relative;
-  padding-left: 18px;
-}
-
-.feature-bottom-grid li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--indigo-700);
-  font-weight: 700;
+.feature-point p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
-  .feature-panel-detail {
-    grid-template-columns: 1fr;
+  .feature-header {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .feature-bottom-grid {
-    grid-template-columns: 1fr;
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
   }
 }
