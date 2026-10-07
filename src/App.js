@@ -1,26 +1,29 @@
 import React from 'react';
-import './App.css';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Introduction from './components/Introduction';
-import Features from './components/Features';
-import Corpus from './components/Corpus';
-import Impact from './components/Impact';
 import Footer from './components/Footer';
+
+import HomePage from './pages/HomePage';
+import CorpusPage from './pages/CorpusPage';
+import FeaturePage from './pages/FeaturePage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
-    <div className="app-shell">
-      <Header />
-      <main>
-        <Hero />
-        <Introduction />
-        <Features />
-        <Corpus />
-        <Impact />
-      </main>
-      <Footer />
-    </div>
+    <HashRouter>
+      <div className="app-shell">
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/corpus" element={<CorpusPage />} />
+            <Route path="/features" element={<FeaturePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
 

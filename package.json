@@ -1,11 +1,11 @@
 {
   "name": "aiwuyan-website",
   "version": "1.0.0",
-  "description": "吾言 - 国际中文教育智能体官方网站",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.2"
   },
   "scripts": {
     "start": "react-scripts start",
